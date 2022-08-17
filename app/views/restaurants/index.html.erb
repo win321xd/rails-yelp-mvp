@@ -1,0 +1,10 @@
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurants_path(restaurant)%></li>
+  <% end %>
+</ul>
+
+
+
+    <%# <li><%= link_to 'Edit Task', edit_task_path(task)%>
+    <%# <li><%= link_to 'Delete', task_path(task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
