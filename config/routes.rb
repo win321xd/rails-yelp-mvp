@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :restaurants do
-    member
     resources :reviews
   end
 end
